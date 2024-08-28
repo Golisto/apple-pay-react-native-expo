@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-apple-pay-example",
-    "slug": "expo-apple-pay-example",
+    "name": "apple-pay-react-native-expo-example",
+    "slug": "apple-pay-react-native-expo-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

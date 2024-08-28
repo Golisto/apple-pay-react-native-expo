@@ -18,8 +18,8 @@
   "keywords": [
     "react-native",
     "expo",
-    "expo-apple-pay",
-    "ExpoApplePay"
+    "apple-pay-react-native-expo",
+    "ApplePay"
   ],
   "repository": "https://github.com/Golisto/apple-pay-react-native-expo",
   "bugs": {

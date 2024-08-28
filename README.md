@@ -20,7 +20,7 @@ Apple has a documentation on how to do this in their _[Configuring your Environm
 {
   "plugins": [
     [
-      "expo-apple-pay",
+      "apple-pay-react-native-expo",
       {
         "merchantIdentifiers": "merchant.",
       }
@@ -37,7 +37,7 @@ export default {
   ...
   plugins: [
     [
-      "expo-apple-pay",
+      "apple-pay-react-native-expo",
       {
         merchantIdentifiers: "merchant.",
       }
@@ -57,17 +57,17 @@ You can pass props to the plugin config object to configure:
 ## Usage
 
 ```js
-import ExpoApplePay, {
+import ApplePay, {
   MerchantCapability,
   PaymentNetwork,
   CompleteStatus,
-} from "expo-apple-pay";
+} from "apple-pay-react-native-expo";
 ```
 
 
 Show Apple pay dialog
 ```js
-ExpoApplePay.show({
+ApplePay.show({
     merchantIdentifier: "merchant...",
     countryCode: "US",
     currencyCode: "USD",
@@ -87,11 +87,11 @@ ExpoApplePay.show({
 .then((paymentData) => {
     // process paymentData on your server
     // then complete the payment process
-    ExpoApplePay.complete(
+    ApplePay.complete(
         CompleteStatus.success
     );
     // or
-    ExpoApplePay.complete(
+    ApplePay.complete(
         CompleteStatus.failure
     );
      
@@ -102,7 +102,7 @@ ExpoApplePay.show({
 ```
 You can dismiss the dialog
 ```js
-ExpoApplePay.dismiss();
+ApplePay.dismiss();
 ```
 
 ## TODO:

@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage       = package['homepage']
   s.platform       = :ios, '13.0'
   s.swift_version  = '5.4'
-  s.source         = { git: 'https://github.com/m1st1ck/expo-apple-payer' }
+  s.source         = { git: 'https://github.com/Golisto/apple-pay-react-native-expo' }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'

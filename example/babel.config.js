@@ -10,7 +10,7 @@ module.exports = function (api) {
           extensions: ['.tsx', '.ts', '.js', '.json'],
           alias: {
             // For development, we want to alias the library to the source
-            'expo-apple-pay': path.join(__dirname, '..', 'src', 'index.ts'),
+            'apple-pay-react-native-expo': path.join(__dirname, '..', 'src', 'index.ts'),
           },
         },
       ],

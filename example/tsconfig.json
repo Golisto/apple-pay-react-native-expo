@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "expo-apple-pay": ["../src/index"],
-      "expo-apple-pay/*": ["../src/*"]
+      "apple-pay-react-native-expo": ["../src/index"],
+      "apple-pay-react-native-expo/*": ["../src/*"]
     }
   }
 }

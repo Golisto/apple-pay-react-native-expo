@@ -6,7 +6,7 @@ module.exports = async (env, argv) => {
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['expo-apple-pay'],
+        dangerouslyAddModulePathsToTranspile: ['apple-pay-react-native-expo'],
       },
     },
     argv

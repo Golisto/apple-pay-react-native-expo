@@ -1,17 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import ExpoApplePay, {
+import ApplePay, {
   MerchantCapability,
   PaymentNetwork,
   CompleteStatus,
-} from "expo-apple-pay";
+} from "apple-pay-react-native-expo";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <TouchableOpacity
         onPress={() => {
-          ExpoApplePay.show({
+          ApplePay.show({
             countryCode: "BG",
             currencyCode: "EUR",
             merchantCapabilities: [MerchantCapability["3DS"]],
@@ -32,12 +32,12 @@ export default function App() {
               console.log(paymentData);
 
               setTimeout(() => {
-                ExpoApplePay.complete(CompleteStatus.success);
+                ApplePay.complete(CompleteStatus.success);
               }, 3000);
             })
             .catch((err) => {
               console.log(err);
-              ExpoApplePay.complete(CompleteStatus.failure);
+              ApplePay.complete(CompleteStatus.failure);
             });
         }}
       >
