@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npx expo install @tunadigital/apple-pay-react-native-expo
+npx expo install apple-pay-react-native-expo
 ```
 
 ## Setting up Apple Pay
