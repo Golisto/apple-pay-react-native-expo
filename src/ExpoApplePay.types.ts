@@ -1,8 +1,8 @@
 export enum MerchantCapability {
-  "3DS" = "capability3DS",
-  "EMV" = "capabilityEMV",
-  "Credit" = "capabilityCredit",
-  "Debit" = "capabilityDebit",
+  "3DS" = "supports3DS",
+  "EMV" = "supportsEMV",
+  "Credit" = "supportsCredit",
+  "Debit" = "supportsDebit",
 }
 
 export enum PaymentNetwork {

@@ -20,7 +20,7 @@ struct PaymentRequestData: Record {
     var currencyCode: String
     
     @Field
-    var merchantCapabilities: [String] = ["capability3DS"]
+    var merchantCapabilities: [String] = ["supports3DS"]
     
     @Field
     var supportedNetworks: [String]
@@ -76,10 +76,10 @@ class PaymentHandler: NSObject  {
     private func getMerchantCapabilitiesFromData(jsMerchantCapabilities: [String]) -> PKMerchantCapability {
         var PKMerchantCapabilityMap = [String: PKMerchantCapability]()
         
-        PKMerchantCapabilityMap["capability3DS"] = PKMerchantCapability.capability3DS
-        PKMerchantCapabilityMap["capabilityCredit"] = PKMerchantCapability.capabilityCredit
-        PKMerchantCapabilityMap["capabilityDebit"] = PKMerchantCapability.capabilityDebit
-        PKMerchantCapabilityMap["capabilityEMV"] = PKMerchantCapability.capabilityEMV
+        PKMerchantCapabilityMap["supports3DS"] = PKMerchantCapability.threeDSecure
+        PKMerchantCapabilityMap["supportsCredit"] = PKMerchantCapability.credit
+        PKMerchantCapabilityMap["supportsDebit"] = PKMerchantCapability.debit
+        PKMerchantCapabilityMap["supportsEMV"] = PKMerchantCapability.emv
         
         var merchantCapabilities: PKMerchantCapability = [];
         for jsMerchantCapability in jsMerchantCapabilities {
